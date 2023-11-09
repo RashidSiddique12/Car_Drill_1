@@ -1,8 +1,6 @@
 
-const {inventory} = require('./inventoryData');
-
-function carmodel(){
-    const arr = new Array(50);
+function carmodel(inventory){
+    const arr = new Array(inventory.length);
     for(let i=0; i<arr.length; i++){
         arr[i] = inventory[i].car_model.toLocaleUpperCase();
 
